@@ -1,2 +1,72 @@
+$navbar-default-bg: #104262;
+
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+
+  &:hover {
+    color: #d0d0d0;
+    text-decoration: none;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: asset-url('levi-bare.jpg');
+  background-color: rgba(248, 247, 216, 0.7);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+
+  h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 1px 3px 5px black;
+  }
+}
+
+.btn-lg {
+  font-size: 1.7em;
+  background-color: #104262;
+}
+
+.footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #383838;
+
+  &:hover {
+    color: #222;
+  }
+
+  small {
+    float: left;
+  }
+
+  ul {
+    float: right;
+    list-style: none;
+
+    li {
+      float: left;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+  }
+}
