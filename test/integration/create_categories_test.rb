@@ -1,7 +1,7 @@
 require 'test_helper'
 
 
-class CreateCategories < ActionDispatch::IntegrationTest
+class CreateCategoriesTest < ActionDispatch::IntegrationTest
 
   test 'get new category form and create category' do
     get new_category_path
@@ -16,7 +16,7 @@ class CreateCategories < ActionDispatch::IntegrationTest
 
   test 'category submission failure' do
     get new_category_path
-    assert_template 'categories/new'
+    assert_template "categories/new"
     assert_no_difference 'Category.count' do
       post categories_path, params:{category:{name:' '}}
     end
