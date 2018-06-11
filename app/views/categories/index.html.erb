@@ -8,6 +8,7 @@
           <li style="list-style: none" class="article-title">
             <%= link_to "#{category.name}", category_path(category) %>
           </li>
+          <li style="list-style: none"><small> <%= pluralize(category.articles.count, "article") %> </small></li>
         </div>
       </div>
     </ul>
